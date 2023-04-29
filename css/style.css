@@ -1,0 +1,228 @@
+/* CSS Reset */
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:51px;
+}
+
+/* Navigation bar */
+#navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+}
+
+/* Navigation bar : Logo and Image */
+#logo{
+     margin:9px -4px;
+}
+
+#logo img{
+     height:63px;
+     margin:1px 14px;
+}
+/* Navigation bar : Listing Styles */
+#navbar ul{
+    display:flex;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.1;
+}
+
+#navbar li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#navbar li a{
+    color:black;
+    font-weight: bold;
+    display:block;
+    padding:10px 25px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+#navbar li a:hover{
+    color:black;
+    text-decoration: underline;
+    font-size:22px;
+    background-color: azure;
+}
+
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:1px 33px;
+    height:469px;
+    align-items: center;
+    justify-content: center;
+    }
+
+#home::before{
+    content:"";
+    background:url('../bg/bg9.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 95%;
+    width:100%;
+    z-index: -1;
+    opacity:0.79;
+}
+
+#home h1{
+    color:black;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Services Section */
+#services{
+    margin:14px 21px;
+    padding:34px;
+    display:flex;
+    /*background-color: aquamarine;*/
+}
+#services .box{
+    border:2px solid brown;
+    padding:34px;
+    margin:-14px 7px;
+    border-radius: 24px;
+    background-color: pink;
+}
+#services .box img{
+    height:121px;
+    width:171px;
+    margin:auto;
+    display:block;
+}
+#services{}
+#services{}
+#services{}
+
+/* Clients-section */
+#clients-section{
+    position:relative;
+    /*height:255px;*/
+}
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:-10px;
+    margin:1px 4px;
+}
+
+#client-section::before{
+    content:"";
+    position:absolute;
+    background-color: cornsilk;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+
+#clients img{
+    height:124px;
+}
+
+.clients-item{
+     padding:34px;
+     margin:-28px 4px;
+}
+
+/* Contact-section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content:"";
+    position:absolute;
+    background: url('../bg/contact.jpg');
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+
+#contactbox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 14px;
+}
+
+#contactbox input,
+#contactbox select{
+    width:100%;
+    padding:0.4rem;
+    border-radius:9px;
+    font-size: 1.1rem;
+    font-family: cursive;
+}
+
+#contactbox form{
+    width:30%;
+}
+
+#contactbox label{
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer{
+    color:white;
+    background-color: black;
+    padding:9px 21px;
+}
+
+/* Utility-Classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding:11px;
+}
+.h-secondary{
+    font-size: 1.4rem;
+    padding:11px;
+    margin:3px;
+}
+
+#btn{
+    padding: 2px 12px;
+    border: 2px solid black;
+    background-color:rgb(121, 121, 206);
+    color: black;
+    margin: 21px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor : pointer;
+}
+
+.center{
+    text-align: center;
+}
